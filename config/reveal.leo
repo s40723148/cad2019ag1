@@ -21,8 +21,13 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20191206035416.1"><vh>每周任務</vh>
+<v t="leo.20191206035416.8"><vh>Week12</vh>
+<v t="leo.20191206035416.9"><vh>影片</vh></v>
+</v>
+</v>
 <v t="leo.20180902120523.13"><vh>繪圖</vh>
-<v t="leo.20180902120523.16"><vh>Inventor 2019</vh>
+<v t="leo.20180902120523.16"><vh>Inventor</vh>
 <v t="leo.20180902120523.17"><vh>影片</vh></v>
 </v>
 <v t="leo.20180902120523.14"><vh>NX12</vh>
@@ -118,7 +123,8 @@ Created by [cad2019ag1](https://s40723148.github.io/cad2019ag1/content/index.htm
 
 						
 </t>
-<t tx="leo.20180902120523.17"># Inventor 2019</t>
+<t tx="leo.20180902120523.17"># Inventor
+&lt;iframe src="https://player.vimeo.com/video/377628750" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.18">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -145,7 +151,8 @@ Created by [cad2019ag1](https://s40723148.github.io/cad2019ag1/content/index.htm
 <t tx="leo.20180902120523.5">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-CMSimfly 網際內容管理
+電腦輔助設計實習課程
+cad2019 設計二甲 第一組
 &lt;/title&gt;
     &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
     &lt;meta name="author" content="Hakim El Hattab"&gt;
@@ -356,5 +363,25 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20191206010029.2"># Creo 6.0</t>
+<t tx="leo.20191206035416.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20191206035416.8">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191206035416.9"># Week 12
+1.NX 零組件繪圖和應力分析
+2.Webots 與 V-rep Tutorial
+</t>
 </tnodes>
 </leo_file>
