@@ -64,9 +64,10 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx="leo.20180902120523.10">## 電腦輔助設計實習課程
+## cad2019 設計二甲 第一組
 
-### KMOLab
+
 
 &lt;small&gt;
 Created by [cad2019ag1](https://s40723148.github.io/cad2019ag1/content/index.html)
@@ -380,8 +381,8 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20191206035416.9"># Week 12
-1.NX 零組件繪圖和應力分析
-2.Webots 與 V-rep Tutorial
+##1.NX 零組件繪圖和應力分析
+##2.Webots 與 V-rep Tutorial
 </t>
 </tnodes>
 </leo_file>
