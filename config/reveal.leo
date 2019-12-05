@@ -21,11 +21,6 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20191206035416.1"><vh>每周任務</vh>
-<v t="leo.20191206035416.8"><vh>Week12</vh>
-<v t="leo.20191206035416.9"><vh>影片</vh></v>
-</v>
-</v>
 <v t="leo.20180902120523.13"><vh>繪圖</vh>
 <v t="leo.20180902120523.16"><vh>Inventor</vh>
 <v t="leo.20180902120523.17"><vh>影片</vh></v>
@@ -364,25 +359,5 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20191206010029.2"># Creo 6.0</t>
-<t tx="leo.20191206035416.1">&lt;section&gt;
-@others
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20191206035416.8">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="leo.20191206035416.9"># Week 12
-##1.NX 零組件繪圖和應力分析
-##2.Webots 與 V-rep Tutorial
-</t>
 </tnodes>
 </leo_file>
