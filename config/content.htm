@@ -27,7 +27,70 @@
 <p>本章中，我們將處理實體零件的結構應力和應變分析。</p>
 <h1>模擬</h1>
 <h2>Webots</h2>
-<h2>V-rep</h2>
+<p><span>Webots的開發始於1996年12月</span><a href="http://www.epfl.ch/" target="_blank"><span>在洛桑</span></a><span>的<a href="http://www.epfl.ch/" target="_blank">瑞士聯邦技術學院（EPFL），</a>當時Olivier Michel被Jean-Daniel Nicoud教授聘為博士後研究員。</span></p>
+<p><span><span>該公司成立於1998年，是從EPFL的MicroComputing and Interface Lab（LAMI）衍生出來的。</span><span>Cyberbotics的最初導師包括Jean-Daniel Nicoud教授，Francesco Mondada教授和Takashi Gomi博士。</span></span></p>
+<p><span><span>從一開始，Webots就被行業（Sony Corp.）和大學用於研究和教育目的。</span></span></p>
+<p><span><span>在2018年12月，Webots已成為根據</span></span><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><span><span>Apache 2.0許可</span></span></a><span><span>條款發行的免費開源軟件<span> </span></span><span>。</span></span></p>
+<p><span><span>如今，Webots已在全球成千上萬的組織中使用，包括行業和學術界。</span></span></p>
+<p><span><span><a href="https://drive.google.com/file/d/1MolDH7kKJt_IIBTrKalsMfNWMrqqTWdt/view?usp=sharing">Webots_2019b_rev1.7z</a><span><span> </span></span></span></span></p>
+<h4><span>Webots 啟動條件:</span></h4>
+<p>1.<span>將start_mdecourse.bat 中加入執行路徑:</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_webots=%Disk%:\Webots_2019b_rev1\msys64\mingw64\bin;%Disk%:\Webots_2019b_rev1\msys64\usr\bin</pre>
+<p>並在 y:\ 根目錄建立 start_webots.bat, 內容為:</p>
+<div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">start Y:\Webots_2019b_rev1\msys64\mingw64\bin\webots.exe</pre>
+</div>
+<p><span>隨身程式系統納入上述兩個條件後, 可以直接在命令列輸入 start_webots.bat 啟動</span></p>
+<p>2.亦可在與data同目錄下建立<span>start_webots.bat, 內容為:</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+start %Disk%:Webots_2019b_rev1\msys64\mingw64\bin\webots.exe</pre>
+<p></p>
+<h3>Webots Tutorial</h3>
+<p>Tutorial 1.</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/K14XjTF2Dtg" width="560"></iframe></p>
+<p><span>器人以其最大速度移動一段時間，然後在輪子旋轉10弧度後停止</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot, Motor
+
+TIME_STEP = 64
+
+# create the Robot instance.
+robot = Robot()
+
+# get the motor devices
+leftMotor = robot.getMotor('left wheel motor')
+rightMotor = robot.getMotor('right wheel motor')
+# set the target position of the motors
+leftMotor.setPosition(10.0)
+rightMotor.setPosition(10.0)
+
+while robot.step(TIME_STEP) != -1:
+   pass</pre>
+<p><span>輪子將以每秒1弧度的速度旋轉</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot, Motor
+
+TIME_STEP = 64
+
+MAX_SPEED = 6.28
+
+# create the Robot instance.
+robot = Robot()
+
+# get a handler to the motors and set target position to infinity (speed control)
+leftMotor = robot.getMotor('left wheel motor')
+rightMotor = robot.getMotor('right wheel motor')
+leftMotor.setPosition(float('inf'))
+rightMotor.setPosition(float('inf'))
+
+# set up the motor speeds at 10% of the MAX_SPEED.
+leftMotor.setVelocity(0.1 * MAX_SPEED)
+rightMotor.setVelocity(0.1 * MAX_SPEED)
+
+while robot.step(TIME_STEP) != -1:
+   pass</pre>
+<div><span></span></div><h2>V-rep</h2>
 <p>solvespace 自走車繪製</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/or6XCbx8KoQ" width="560"></iframe></p>
 <h1>繪圖</h1>
