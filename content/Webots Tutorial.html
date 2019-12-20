@@ -154,10 +154,50 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='每周任務.html'>Next</a> >> 每周任務<br /><h1>About</h1>
-<p><span>第 1 組成員:</span><br/><a href="https://github.com/s40523120/cad2019">40523120 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40523120.github.io/cad2019">40523120 網站</a><br/><a href="https://github.com/s40723102/cad2019">40723102 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723102.github.io/cad2019">40723102 網站</a><br/><a href="https://github.com/s40723110/cad2019">40723110 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723110.github.io/cad2019">40723110 網站</a><br/><a href="https://github.com/s40723112/cad2019">40723112 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723112.github.io/cad2019">40723112 網站</a><br/><a href="https://github.com/s40723115/cad2019">40723115 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723115.github.io/cad2019">40723115 網站</a><br/><a href="https://github.com/s40723120/cad2019">40723120 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723120.github.io/cad2019">40723120 網站</a><br/><a href="https://github.com/s40723127/cad2019">40723127 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723127.github.io/cad2019">40723127 網站</a><br/><a href="https://github.com/s40723136/cad2019">40723136 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723136.github.io/cad2019">40723136 網站</a><br/><a href="https://github.com/s40723140/cad2019">40723140 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723140.github.io/cad2019">40723140 網站</a><br/><a href="https://github.com/s40723143/cad2019">40723143 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723143.github.io/cad2019">40723143 網站</a><br/><a href="https://github.com/s40723146/cad2019">40723146 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723146.github.io/cad2019">40723146 網站</a><br/><a href="https://github.com/s40723148/cad2019">40723148 倉儲</a><span><span> </span>|<span> </span></span><a href="https://s40723148.github.io/cad2019">40723148 網站</a></p>
-<p></p>
-<br /> <a href='每周任務.html'>Next</a> >> 每周任務</div>
+    <div id="tipue_search_content">Webots << <a href='Webots.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep<br /><h1>Webots Tutorial</h1>
+<p>Tutorial 1.</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/K14XjTF2Dtg" width="560"></iframe></p>
+<p><span>器人以其最大速度移動一段時間，然後在輪子旋轉10弧度後停止</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot, Motor
+
+TIME_STEP = 64
+
+# create the Robot instance.
+robot = Robot()
+
+# get the motor devices
+leftMotor = robot.getMotor('left wheel motor')
+rightMotor = robot.getMotor('right wheel motor')
+# set the target position of the motors
+leftMotor.setPosition(10.0)
+rightMotor.setPosition(10.0)
+
+while robot.step(TIME_STEP) != -1:
+   pass</pre>
+<p><span>輪子將以每秒1弧度的速度旋轉</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from controller import Robot, Motor
+
+TIME_STEP = 64
+
+MAX_SPEED = 6.28
+
+# create the Robot instance.
+robot = Robot()
+
+# get a handler to the motors and set target position to infinity (speed control)
+leftMotor = robot.getMotor('left wheel motor')
+rightMotor = robot.getMotor('right wheel motor')
+leftMotor.setPosition(float('inf'))
+rightMotor.setPosition(float('inf'))
+
+# set up the motor speeds at 10% of the MAX_SPEED.
+leftMotor.setVelocity(0.1 * MAX_SPEED)
+rightMotor.setVelocity(0.1 * MAX_SPEED)
+
+while robot.step(TIME_STEP) != -1:
+   pass</pre>
+<div><span></span></div>
+<br />Webots << <a href='Webots.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep</div>
         
     <!-- footer -->
       <div class="container">

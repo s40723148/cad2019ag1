@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='每周任務.html'>每周任務</a><ul class='dropdown'><li><a href='Week10.html'>Week10</a><li class='has-children'><a href='Week12 應力分析.html'>Week12 應力分析</a><ul class='dropdown'><li><a href='第八章.html'>第八章</a></li></li></ul></ul><li class='has-children'><a href='模擬.html'>模擬</a><ul class='dropdown'><li><a href='Webots.html'>Webots</a><li><a href='V-rep.html'>V-rep</a></li></ul><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li><a href='Inventor 2019.html'>Inventor 2019</a><li><a href='NX 12..html'>NX 12.</a><li><a href='Solidworks-1.html'>Solidworks-1</a><li><a href='NX 12.html'>NX 12</a><li><a href='Solidworks-2.html'>Solidworks-2</a><li><a href='Creo 6.0.html'>Creo 6.0</a><li><a href='Onshape.html'>Onshape</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='每周任務.html'>每周任務</a><ul class='dropdown'><li><a href='Week10.html'>Week10</a><li class='has-children'><a href='Week12 應力分析.html'>Week12 應力分析</a><ul class='dropdown'><li><a href='第八章.html'>第八章</a></li></li></ul></ul><li class='has-children'><a href='模擬.html'>模擬</a><ul class='dropdown'><li class='has-children'><a href='Webots.html'>Webots</a><ul class='dropdown'><li><a href='Webots Tutorial.html'>Webots Tutorial</a></li></ul><li><a href='V-rep.html'>V-rep</a></li></ul><li class='has-children'><a href='繪圖.html'>繪圖</a><ul class='dropdown'><li><a href='Inventor 2019.html'>Inventor 2019</a><li class='has-children'><a href='NX 12.html'>NX 12</a><ul class='dropdown'><li><a href='CHAPTER 1 – INTRODUCTION.html'>CHAPTER 1 – INTRODUCTION</a></li></ul><li class='has-children'><a href='Solidworks-1.html'>Solidworks-1</a><ul class='dropdown'><li><a href='CHAPTER 2 – GETTING STARTED.html'>CHAPTER 2 – GETTING STARTED</a></li></ul><li><a href='Solidworks-2.html'>Solidworks-2</a><li><a href='Creo 6.0.html'>Creo 6.0</a><li><a href='Onshape.html'>Onshape</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,8 +154,29 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">模擬 << <a href='模擬.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep<br /><h1>Webots</h1>
-<br />模擬 << <a href='模擬.html'>Previous</a> <a href='V-rep.html'>Next</a> >> V-rep</div>
+    <div id="tipue_search_content">模擬 << <a href='模擬.html'>Previous</a> <a href='Webots Tutorial.html'>Next</a> >> Webots Tutorial<br /><h1>Webots</h1>
+<p><span>Webots的開發始於1996年12月</span><a href="http://www.epfl.ch/" target="_blank"><span>在洛桑</span></a><span>的<a href="http://www.epfl.ch/" target="_blank">瑞士聯邦技術學院（EPFL），</a>當時Olivier Michel被Jean-Daniel Nicoud教授聘為博士後研究員。</span></p>
+<p><span><span>該公司成立於1998年，是從EPFL的MicroComputing and Interface Lab（LAMI）衍生出來的。</span><span>Cyberbotics的最初導師包括Jean-Daniel Nicoud教授，Francesco Mondada教授和Takashi Gomi博士。</span></span></p>
+<p><span><span>從一開始，Webots就被行業（Sony Corp.）和大學用於研究和教育目的。</span></span></p>
+<p><span><span>在2018年12月，Webots已成為根據</span></span><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><span><span>Apache 2.0許可</span></span></a><span><span>條款發行的免費開源軟件<span> </span></span><span>。</span></span></p>
+<p><span><span>如今，Webots已在全球成千上萬的組織中使用，包括行業和學術界。</span></span></p>
+<p><span><span><a href="https://drive.google.com/file/d/1MolDH7kKJt_IIBTrKalsMfNWMrqqTWdt/view?usp=sharing">Webots_2019b_rev1.7z</a><span><span> </span></span></span></span></p>
+<h4><span>Webots 啟動條件:</span></h4>
+<p>1.<span>將start_mdecourse.bat 中加入執行路徑:</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">set path_webots=%Disk%:\Webots_2019b_rev1\msys64\mingw64\bin;%Disk%:\Webots_2019b_rev1\msys64\usr\bin</pre>
+<p>並在 y:\ 根目錄建立 start_webots.bat, 內容為:</p>
+<div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">start Y:\Webots_2019b_rev1\msys64\mingw64\bin\webots.exe</pre>
+</div>
+<p><span>隨身程式系統納入上述兩個條件後, 可以直接在命令列輸入 start_webots.bat 啟動</span></p>
+<p>2.亦可在與data同目錄下建立<span>start_webots.bat, 內容為:</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
+set Disk=y
+subst %Disk%: "data"
+
+start %Disk%:Webots_2019b_rev1\msys64\mingw64\bin\webots.exe</pre>
+<p></p>
+<br />模擬 << <a href='模擬.html'>Previous</a> <a href='Webots Tutorial.html'>Next</a> >> Webots Tutorial</div>
         
     <!-- footer -->
       <div class="container">
