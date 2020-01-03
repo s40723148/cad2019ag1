@@ -98,7 +98,7 @@ while robot.step(TIME_STEP) != -1:
 <p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; d9bbab3fc9613dfae3821bb1ae661ceda2472b6e</p>
 <p></p>
 <h2>NX 12</h2>
-<<<<<<< HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 <p>source : <a href="http://mde.tw/cad2019/downloads/NX-12-for-Engineering-Design.pdf">NX-12-for-Engineering-Design.pdf </a></p>
 =======
 <p>source : <a href="http://mde.tw/cad2019/downloads/NX-12-for-Engineering-Design.pdf">NX-12-for-Engineering-Design.pdf</a></p>
@@ -132,7 +132,7 @@ while robot.step(TIME_STEP) != -1:
 <p><span>-----------------------------------------------------------------------------------</span></p>
 <p><span><img alt="" height="245" src="/images/autodesk_inventor_7.png" width="300"/></span></p>
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/OExteDbA218" width="400"></iframe></span></p>
->>>>>>> 9a179c3293eff2ae3e082b09dafdab68a68de3df
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 9a179c3293eff2ae3e082b09dafdab68a68de3df
 <h3>CHAPTER 1 – INTRODUCTION</h3>
 <h5><br/>   在全球競爭日益激烈的背景下，現代製造環境的特徵在於交付品種日益增多，並趨向於小批量和高質量的產品。 除非以高質量、低成本和在更短時間推出新產品，否則在全球競爭中生存是一件很難的事。隨著計算能力的巨大變化和用於設計和生產的軟件工具的廣泛可用性，工程師現在正在使用計算機輔助設計（CAD），計算機輔助製造（CAM）和計算機輔助工程（CAE）系統來自動化其設計和生產過程。 現在，這些技術每天都用於各種不同的工程任務。 以下是產品實現過程中如何使用CAD，CAM和CAE技術的簡要說明。</h5>
 <h4><strong><span style="background-color: #333333; color: #00ccff;">1.1 PRODUCT REALIZATION PROCESS </span></strong></h4>
@@ -281,8 +281,7 @@ while robot.step(TIME_STEP) != -1:
 </div>
 <h2>Creo 6.0</h2>
 <h2>Onshape</h2>
-<<<<<<< HEAD
-<h1>W17 協同任務</h1>
+<h1>W17協同任務</h1>
 <p><a href="https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment" rel="nofollow">https://cyberbotics.com/doc/guide/tutorial-2-modification-of-the-environment</a><span><span> </span></span></p>
 <p><span style="color: #0000ff;"><span style="color: #000000;">Hands-on #1:</span> Make sure the my_first_simulation.wbt world file is open, and that the simulation is paused and is at a virtual time of 0. Using the File / Save World As... menu, save the simulation as obstacles.wbt.</span></p>
 <p><span><br/>確保先前儲存的文件已經打開,並將模擬暫停及時間歸零,在另存成obstacles.wbt</span></p>
@@ -290,17 +289,25 @@ while robot.step(TIME_STEP) != -1:
 <p><span><br/>在3D試圖或場景樹中將 RectangleArenag 刪除並點選 TexturedBackroundLight 再點 add 並依路徑選擇 PROTO nodes (Webots Projects) / objects / floors / Floor (Solid)</span></p>
 <p><span><br/><span style="color: #0000ff;"><span style="color: #000000;">Hands-on #3:</span> In the scene tree view select and expand the Floor. Modify the size field and set it to {1, 1} to resize it to 1mx1m.</span></span></p>
 <p><span><br/>將 Floor 展開 將 size 字段修改成 1X1</span></p>
-<p><span><span style="color: #0000ff;">The solid node</span>(實體節點)</span></p>
+<h5><span><span style="color: #0000ff;">The solid node</span>(實體節點)</span></h5>
 <p><span><span style="color: #0000ff;">A Solid node represents a rigid body,To define a rigid body, you will have to create a Solid node. Inside this node you will set up different sub-nodes corresponding to the characteristics of the rigid body. The following figure depicts a rigid body and its sub-nodes. The graphical representation of the Solid node is defined by the Shape nodes populating its children list. The collision bounds are defined in its boundingObject field. The graphical representation and the collision shape are often but not necessarily identical. Finally, the physics field defines if the object belongs to the dynamical or to the static environment. All these sub-nodes are optional, but the physics field needs the boundingObject to be defined.</span></span></p>
 <p><span><br/>Solid節點代表一個剛體,在節點內可依缸體特性設置子節點,下圖描繪了剛體及子節點 下圖以 Shape 定義 Solid節點中的children。在 boundingObject 字段中定義碰撞範圍。圖形表示與碰撞形狀不一定相同。physics字段是定義屬於動態環境或靜態環境,但需要 boundingObject 定義該字段。</span></p>
-<p><span></span></p>
-=======
-<h1>W17協同任務</h1>
+<h5><span style="color: #0000ff;">Create A Ball</span>(創建一個球)</h5>
+<p>Hands-on #4:<span style="color: #0000ff;"> In the scene tree view, select the last node and press the Add button. In the dialog, open the Bases nodes section and select the Solid node. In the scene tree view, expand the Solid node and select its children field. Add a Shape node to it by using the Add button. Select the appearance field of the Shape node and use the Add button to add a PBRAppearance node.</span></p>
+<p><span style="color: #0000ff;">1.Add a Sphere node as the geometry field of the newly created Shape node.</span><br/><span style="color: #0000ff;">2.Expand the PBRAppearance node and change its metalness field to 0 and its roughness field to 1.</span><br/><span style="color: #0000ff;">3.Add another Sphere node to the boundingObject field of the Solid.</span><br/><span style="color: #0000ff;">4.Finally add a Physics node to the physics field of the Solid.</span><br/><span style="color: #0000ff;">5.By modifying the translation field of the Solid node, place the ball in front of the robot (at {0, 0.2, -0.2} for example).</span><br/><span style="color: #0000ff;">6.Save the simulation.</span><br/><span style="color: #0000ff;">7.The result is depicted in this figure.</span></p>
+<p></p>
+<p>步驟#4:在場景視圖中，選擇最後一個節點並且按"ADD"鈕，在對話框裡打開"基礎"節點(Bases nodes)，接著選擇"實體"節點(Solid node)。</p>
+<p>在場景視圖中，展開"實體"節點(Solid node)，然後選擇子字段(children field)，按"ADD"新增一個"形狀"節點，選擇形狀節點中的外觀字段，<br/>接著按"ADD" 鈕 新增一個"PBRAppearance"節點。</p>
+<p>1.新增一個球體節點(Sphere node)作為新建的形狀節點的幾何字段。<br/>2.展開PBRAppearance節點，並且將金屬字段設定0，接著粗糙度字段設定1。<br/>3.新建另一個球體節點(Sphere node)，並添加到實體的 boundingObject 字段。<br/>4.最後，新增一個Physics節點到實體中的Physical字段。<br/>5.修該時體節點的平移字段，把球放在機器人面前(例如:在座標[0,0.2,-0.2])。<br/>6.儲存模擬。<br/>7.結果如圖所示。</p>
+<h5><br/><span style="color: #0000ff;">Geometries</span>(幾何形狀)</h5>
+<p>Hands-on #5:<span style="color: #0000ff;"> For each Sphere node defining the ball, set its radius field to 0.05 and its subdivision field to 2. Refer to the Reference Manual to understand what the subdivision field stands for.</span></p>
+<p>步驟#5:定義每個球體節點，將半徑字段設置為0.05，並且把細分(subdivision)字段設定為2，請查閱《參考手冊》了解細分字段的意義。</p>
+<p>=======</p>
 <p></p>
 <p>Solution: World File<br/>解決方案：世界文件<br/>To compare your world with the solution,<br/>為了將您的世界與解決方案進行比較，<br/> go to your files and find the folder named "my_first_simulation" created in Tutorial 1,<br/>轉到文件，找到在教程1中創建的名為“ my_first_simulation”的文件夾<br/> then go to the "worlds" folder and open with a text editor the right world. <br/>然後轉到“世界”文件夾，並使用文本編輯器打開正確的世界。<br/>This solution as the others is located in the solution directory.<br/>與其他解決方案一樣，該解決方案位於解決方案目錄中。</p>
-<p>Efficiency / 效率<br/>The simulation of rigid bodies is computationally expensive. <br/>剛體的模擬在計算上是昂貴的。<br/>The simulation speed can be increased by minimizing the number of bounding objects, <br/>通過最小化邊界對象的數量可以提高仿真速度，<br/>minimizing the constraints between them (more information about the constraints in the next tutorials),<br/>使它們之間的約束最小化（有關下一個約束的更多信息），<br/>and maximizing the WorldInfo.basicTimeStep field. <br/> 並最大化WorldInfo.basicTimeStep字段。<br/>On each simulation,<br/>在每次模擬中<br/>a trade-off has to be found between simulation speed and realism.<br/>必須在仿真速度和真實性之間找到一個權衡。</p>
+<p>Efficiency /  效率<br/>The simulation of rigid bodies is computationally expensive. <br/>剛體的模擬在計算上是昂貴的。<br/>The simulation speed can be increased by minimizing the number of bounding objects, <br/>通過最小化邊界對象的數量可以提高仿真速度，<br/>minimizing the constraints between them (more information about the constraints in the next tutorials),<br/>使它們之間的約束最小化（有關下一個約束的更多信息），<br/>and maximizing the WorldInfo.basicTimeStep field. <br/> 並最大化WorldInfo.basicTimeStep字段。<br/>On each simulation,<br/>在每次模擬中<br/>a trade-off has to be found between simulation speed and realism.<br/>必須在仿真速度和真實性之間找到一個權衡。</p>
 <p>Conclusion<br/>結論<br/>At the end of this tutorial,<br/>在本教程的最後，<br/>you are able to create simple environments based on rigid bodies. <br/>您能夠基於剛體創建簡單的環境。<br/>You are able to add nodes from the scene tree view and to modify their fields.<br/>您可以從場景樹視圖添加節點並修改其字段。<br/>You have become acquainted with the Solid,Physics, Shape, Sphere and Box nodes.<br/>您已經熟悉了實體，物理，形狀，球體和盒子節點。<br/>You also saw the DEF-USE mechanism that allows to reduce node redundancy of the scene tree.<br/>您還看到了DEF-USE機制，該機制可減少場景樹的節點冗餘。</p>
->>>>>>> 9a179c3293eff2ae3e082b09dafdab68a68de3df
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 9a179c3293eff2ae3e082b09dafdab68a68de3df</p>
 <div id="gtx-trans" style="position: absolute; left: 9px; top: 6024px;">
 <div class="gtx-trans-icon"></div>
 </div>
