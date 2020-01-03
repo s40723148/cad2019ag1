@@ -107,7 +107,9 @@ Created by [cad2019ag1](https://s40723148.github.io/cad2019ag1/content/index.htm
 
 						
 </t>
-<t tx="leo.20180902120523.15"># NX12</t>
+<t tx="leo.20180902120523.15"># NX12
+stress analysis practice
+&lt;iframe src="https://www.youtube.com/watch?v=fZe79_imPUQ" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.16">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
