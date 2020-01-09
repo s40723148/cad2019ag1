@@ -16,14 +16,6 @@
 <p>----------------------------------------------------</p>
 <p><span>1 . 分別用 Solvespace   和  NX 建立零組件，錄製繪圖過程並建構出零組件後與V-REP、Webots組做</span><span>結合。</span></p>
 <p><span>2 .  NX繪圖者匯出零件後分析零件應力分析，再和Webots的應力分析做比較，得出差異性。</span></p>
-<h3>第八章</h3>
-<p>第八章 有限元素分析</p>
-<p>有限元素分析（<span>FEA</span>）是有限元素方法（<span>FEM</span>）的實際運用，他用於對結構或流體所施加的因素<span>(</span>例如力、壓力、熱量和振動<span>)</span>來做出反應行為。</p>
-<p>通常，開始的過程都會先從創建幾何模型開始，之後再將模型細分(網狀化)成許多在特定的節點上連結在一起的簡單幾何形狀的小塊(元素)，而材料的性質和限制條件也會應用在元素上。</p>
-<p>在最後，許多軟體像是NX12都能解決有限元素分析（<span>FEA</span>）的問題並將結果輸出且可視化。有限元素分析（<span>FEA</span>）能夠幫助工程師在製造和測試前，更加了解產品的性能。</p>
-<p>有限元素分析（<span>FEA</span>）的應用包括結構分析、熱分析、流體力學和電磁兼容性</p>
-<p>其中，有限元素分析（<span>FEA</span>）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。</p>
-<p>本章中，我們將處理實體零件的結構應力和應變分析。</p>
 <h1>模擬</h1>
 <h2>Webots</h2>
 <p><span>Webots的開發始於1996年12月</span><a href="http://www.epfl.ch/" target="_blank"><span>在洛桑</span></a><span>的<a href="http://www.epfl.ch/" target="_blank">瑞士聯邦技術學院（EPFL），</a>當時Olivier Michel被Jean-Daniel Nicoud教授聘為博士後研究員。</span></p>
@@ -235,6 +227,13 @@ while robot.step(TIME_STEP) != -1:
 <p><span lang="zh-TW" style="color: #000000;" tabindex="0"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/WVzp873mNtA" width="500"></iframe></span></p>
 <p><span lang="zh-TW" style="color: #000000;" tabindex="0"></span></p>
 <h3>Stress Analysis</h3>
+<p>第八章 有限元素分析</p>
+<p>有限元素分析（<span>FEA</span>）是有限元素方法（<span>FEM</span>）的實際運用，他用於對結構或流體所施加的因素<span>(</span>例如力、壓力、熱量和振動<span>)</span>來做出反應行為。</p>
+<p>通常，開始的過程都會先從創建幾何模型開始，之後再將模型細分(網狀化)成許多在特定的節點上連結在一起的簡單幾何形狀的小塊(元素)，而材料的性質和限制條件也會應用在元素上。</p>
+<p>在最後，許多軟體像是NX12都能解決有限元素分析（<span>FEA</span>）的問題並將結果輸出且可視化。有限元素分析（<span>FEA</span>）能夠幫助工程師在製造和測試前，更加了解產品的性能。</p>
+<p>有限元素分析（<span>FEA</span>）的應用包括結構分析、熱分析、流體力學和電磁兼容性</p>
+<p>其中，有限元素分析（<span>FEA</span>）最常用於結構和固體力學，並應用於計算機械性能（例如應力和位移）。這些（應力和位移）的計算對機械部件的性能非常重要，甚至能夠預防故障。</p>
+<p>本章中，我們將處理實體零件的結構應力和應變分析。</p>
 <p><a href="https://www.youtube.com/watch?v=fZe79_imPUQ">https://www.youtube.com/watch?v=fZe79_imPUQ</a></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/fZe79_imPUQ" width="500"></iframe></p>
 <p></p>
@@ -267,7 +266,8 @@ while robot.step(TIME_STEP) != -1:
 <p><span lang="zh-TW" tabindex="0"><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/iXOIGBjO5NQ" width="400"></iframe></span></span></p>
 <p><span lang="zh-TW" tabindex="0"><span>---------------------------------------------------------------------------------------</span></span></p>
 <p><span lang="zh-TW" tabindex="0"><span><img alt="" height="245" src="/images/autodesk_inventor_7.png" width="300"/></span></span></p>
-<p><span lang="zh-TW" tabindex="0"><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/OExteDbA218" width="400"></iframe></span></span></p><h2>Solidworks</h2>
+<p><span lang="zh-TW" tabindex="0"><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/OExteDbA218" width="400"></iframe></span></span></p>
+<h2>Solidworks</h2>
 <p>solidworks  brief  history</p>
 <p>        Solidworks是由Jon Hirschtick於1993年12月創立的，Jon Hirschtick用100萬美元成立了該公司。 之後Hirschtick招募了一組工程師，他們的目標是創建3D CAD軟件，並且希望這個軟體能夠讓Windows系統的介面成功運作並適合Windows去利用。</p>
 <p>        1995年11月，SolidWorks很快發布了。它是Windows的第一個而且也很重要的建模器。事實證明這是CAD後續發展的重要一步，雖然AutoCAD發行得比Solidworks早得多，但SolidWorks為也帶來了新的東西-「3D建模」。因此，3D CAD成為1990年代的焦點。在短短幾個月內，SolidWorks改變了工程師將「創造變為現實」的方式。</p>
@@ -319,7 +319,8 @@ while robot.step(TIME_STEP) != -1:
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/FiCEG0G2pfk" width="400"></iframe></p>
 <p>展示</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2RZ1kI_X8OU" width="400"></iframe></p>
-<p><span></span></p><h2>Onshape</h2>
+<p><span></span></p>
+<h2>Onshape</h2>
 <h1>W17協同任務</h1>
 <p></p>
 <h2>Webots  W17</h2>
