@@ -1,3 +1,12 @@
 [submodule "cmsimde"]
 	path = cmsimde
 	url = https://github.com/mdecourse/cmsimde
+[submodule "cad2019ag1"]
+	path = cad2019ag1
+	url = https://github.com/s40723148/cad2019ag1
+[submodule "cmsmde"]
+	path = cmsmde
+	url = https://github.com/s40723148/cad2019ag1
+[submodule "cmsumde"]
+	path = cmsumde
+	url = https://github.com/s40723148/cad2019ag1
